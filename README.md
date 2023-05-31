@@ -24,9 +24,10 @@ Print the characters and its huffman code>
 
  
 ## Program:
+```
 Developed by: Shobika P
 Register No: 212221230096
-
+```
 
 # Get the input String
 ```
