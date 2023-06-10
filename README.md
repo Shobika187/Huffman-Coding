@@ -32,6 +32,9 @@ Register No: 212221230096
 # Get the input String
 ```
 string='21222120096 Shobika'
+```
+# Create tree nodes
+```
 class NodeTree(object):
   def __init__(self,left=None,right=None):
     self.left=left
@@ -41,7 +44,7 @@ class NodeTree(object):
 ```
 
 
-# Create tree nodes
+# Main function to implement huffman coding# Main function to implement huffman coding
 
 ```
 def huffman_code_tree(node,left=True,binString=''):
@@ -53,8 +56,8 @@ def huffman_code_tree(node,left=True,binString=''):
   d.update(huffman_code_tree(r,False,binString+'1'))
   return d
 ```
+# Calculate frequency of occurrence
 
-# Main function to implement huffman coding
 ```
 freq = {}
 for c in string:
@@ -67,7 +70,7 @@ nodes=freq
 ```
 
 
-# Calculate frequency of occurrence
+# Print the characters and its huffmancode
 
 ```
 while len(nodes)>1:
@@ -77,12 +80,7 @@ while len(nodes)>1:
   node=NodeTree(key1,key2)
   nodes.append((node,c1+c2))
   nodes=sorted(nodes,key=lambda x:x[1],reverse=True)
-```
 
-
-# Print the characters and its huffmancode
-
-```
 huffmanCode=huffman_code_tree(nodes[0][0])
 print('Char|Huffman code')
 print('-------------------')
