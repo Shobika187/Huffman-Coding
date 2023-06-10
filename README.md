@@ -44,7 +44,7 @@ class NodeTree(object):
 ```
 
 
-# Main function to implement huffman coding# Main function to implement huffman coding
+# Main function to implement huffman coding
 
 ```
 def huffman_code_tree(node,left=True,binString=''):
